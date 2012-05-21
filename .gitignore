@@ -1,6 +1,158 @@
-# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
-bin
-obj
+# git-ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+# see http://www.kernel.org/pub//software/scm/git/docs/gitignore.html
 
-# mstest test results
-TestResults
+# exclude these ...
+# git-ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+
+
+BuildOutput.txt
+/*/BuildOutput.txt
+/*/*/BuildOutput.txt
+
+
+
+*/*/*/bin
+*/*/*/*/bin
+*/*/*/*/*/bin
+*/*/*/*/*/*/bin
+
+*/bin/Debug
+*/*/bin/Debug
+*/*/*/bin/Debug
+*/*/*/*/bin/Debug
+*/*/*/*/*/bin/Debug
+*/*/*/*/*/*/bin/Debug
+
+*/obj
+*/*/obj
+*/*/*/obj
+*/*/*/*/obj
+*/*/*/*/*/obj
+*/*/*/*/*/*/obj
+
+*/files/testResults
+*/*/files/testResults
+*/*/*/files/testResults
+*/*/*/*/files/testResults
+*/*/*/*/*/files/testResults
+*/*/*/*/*/*/files/testResults
+
+*/BuildArtifacts
+*/*/BuildArtifacts
+*/*/*/BuildArtifacts
+*/*/*/*/BuildArtifacts
+*/*/*/*/*/BuildArtifacts
+*/*/*/*/*/*/BuildArtifacts
+
+*/FitArtifacts
+*/*/FitArtifacts
+*/*/*/FitArtifacts
+*/*/*/*/FitArtifacts
+*/*/*/*/*/FitArtifacts
+*/*/*/*/*/*/FitArtifacts
+
+*.suo
+*/*.suo
+*/*/*.suo
+*/*/*/*.suo
+*/*/*/*/*.suo
+*/*/*/*/*/*.suo
+
+*.sln.DotSettings.user
+
+src/*.zip
+_ReSharper*.*
+*.resharper.user
+*.*.resharper.user
+*.*.*.resharper.user
+*.*.*.*.resharper.user
+*.*.*.*.*.resharper.user
+*.*.*.*.*.*.resharper.user
+*.*.*.*.*.*.*.resharper.user
+*.*.*.*.*.*.*.*.resharper.user
+*.*.*.*.*.*.*.*.*.resharper.user
+*.*.*.*.*.*.*.*.*.*.resharper.user
+*.*.*.*.*.*.*.*.*.*.*.resharper.user
+
+_ReSharper.*
+_ReSharper.*.*
+_ReSharper.*.*.*
+_ReSharper.*.*.*.*
+_ReSharper.*.*.*
+_ReSharper.*.*
+_ReSharper.*
+
+src/*/bin/*
+src/*/bin/*/*
+src/*/*/bin/*/*
+src/*/*/bin/*
+
+*/_ReSharper.*
+*/*/_ReSharper.*
+*/*/*/_ReSharper.*
+*/*/*/*/_ReSharper.*
+*/*/*/*/*/_ReSharper.*
+*/*/*/*/*/*/_ReSharper.*
+*/*/*/*/*/*/*/_ReSharper.*
+*/*/*/*/*/*/*/*/_ReSharper.*
+*/*/*/*/*/*/*/*/*/_ReSharper.*
+*/*/*/*/*/*/*/*/*/*/_ReSharper.*
+*/*/*/*/*/*/*/*/*/*/*/_ReSharper.*
+*/*/*/*/*/*/*/*/*/*/*/*/_ReSharper.*
+
+*/*.ReSharper.*
+*/*/*.ReSharper.*
+*/*/*/*.ReSharper.*
+*/*/*/*/*.ReSharper.*
+*/*/*/*/*/*.ReSharper.*
+*/*/*/*/*/*/*.ReSharper.*
+*/*/*/*/*/*/*/*.ReSharper.*
+*/*/*/*/*/*/*/*/*.ReSharper.*
+*/*/*/*/*/*/*/*/*/*.ReSharper.*
+*/*/*/*/*/*/*/*/*/*/*.ReSharper.*
+*/*/*/*/*/*/*/*/*/*/*/*.ReSharper.*
+*/*/*/*/*/*/*/*/*/*/*/*/*.ReSharper.*
+
+
+
+
+
+*.Cache
+*/*.cache
+*/*/*.cache
+*/*/*/*.cache
+*/*/*/*/*.cache
+
+*.*.cache
+*.*.*.cache
+*.*.*.*.cache
+
+libs
+
+*.csproj.user
+
+
+/src/TTL.CardData.Services.RjisProxy/FitArtifacts
+
+
+/src/fitnesse.working.dir/FitNesseRoot/ErrorLogs
+
+
+/*/*/*/*.xml
+\*\*\*\*.xml
+
+/*/*/*/*.log
+\*\*\*\*.log
+*.stackdump
+*.log.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]
+.*.swp

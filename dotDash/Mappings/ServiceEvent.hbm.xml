@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="dotDash"  namespace="dotDash.Domain">
+
+  <class name="ServiceEvent">
+    <id name="EventId">
+      <generator class="guid" />
+    </id>
+    <property name="ServiceId" not-null="true"/>
+    <property name="State" not-null="true"/>
+    <property name="Description" not-null="true"/>
+    <property name="Created" not-null="true" type="DateTime"/>
+  </class>
+
+</hibernate-mapping>
